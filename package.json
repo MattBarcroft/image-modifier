@@ -1,10 +1,14 @@
 {
   "dependencies": {
+    "@expo/ngrok": "4.1.0",
+    "axios": "^1.4.0",
+    "deepai": "^1.0.21",
     "expo": "^48.0.7",
     "expo-image-picker": "~14.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.71.3",
+    "react-native-dropdown-picker": "^5.4.6",
     "react-native-web": "~0.18.7"
   },
   "devDependencies": {
@@ -14,7 +18,8 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "tunnel": "expo start -c --ios --tunnel"
   },
   "version": "1.0.0",
   "private": true,
