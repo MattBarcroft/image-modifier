@@ -7,7 +7,7 @@
     "expo-image-picker": "~14.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-native": "0.71.3",
+    "react-native": "0.71.14",
     "react-native-dropdown-picker": "^5.4.6",
     "react-native-web": "~0.18.7"
   },
@@ -19,7 +19,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "tunnel": "expo start -c --ios --tunnel"
+    "tunnel": "expo start -c --ios --tunnel",
+    "prebuild": "expo prebuild"
   },
   "version": "1.0.0",
   "private": true,

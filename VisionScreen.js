@@ -4,10 +4,11 @@ import { Button, Image, Text, View, ActivityIndicator } from "react-native";
 import styles from "./styles";
 import * as ImagePicker from "expo-image-picker";
 
-const DEEP_AI_API_KEY = "123321";
+const DEEP_AI_API_KEY = env.DEEP_AI_API_KEY;
 const DEEP_AI_API_URL = "https://api.deepai.org/api/";
 
-const GOOGLE_VISION_API_KEY = "ABCCBA";
+const GOOGLE_VISION_API_KEY =
+  env.GOOGLE_VISION_API_KEY || "YOUR_GOOGLE_VISION_API_KEY_HERE";
 const GOOGLE_VISION_API_URL = `https://vision.googleapis.com/v1/images:annotate?key=${GOOGLE_VISION_API_KEY}`;
 
 async function callGoogleVisionAsync(image) {
